@@ -1,10 +1,12 @@
 ﻿using System;
-
+using MvvmCross.Binding.BindingContext;
+using MvvmCross.Platforms.Ios.Views;
+using MvvmCrossValueConversion.Core.ViewModels;
 using UIKit;
 
 namespace MvvmCrossValueConversion.iOS.Views
 {
-    public partial class TwoWayView : UIViewController
+    public partial class TwoWayView : MvxViewController
     {
         public TwoWayView() : base("TwoWayView", null)
         {
@@ -13,13 +15,14 @@ namespace MvvmCrossValueConversion.iOS.Views
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            // Perform any additional setup after loading the view, typically from a nib.
-        }
 
-        public override void DidReceiveMemoryWarning()
-        {
-            base.DidReceiveMemoryWarning();
-            // Release any cached data, images, etc that aren't in use.
+            var set = this.CreateBindingSet<TwoWayView, TwoWayViewModel>();
+
+            set.Bind(TheValueLabel).To(vm => vm.TheValue);
+            set.Bind(EditValueTextField).To(vm => vm.TheValue).WithConversion("TwoWay");
+            set.Apply();
+
+            View.AddGestureRecognizer(new UITapGestureRecognizer(() => { EditValueTextField.ResignFirstResponder(); }));
         }
     }
 }
