@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StringsView">
+            <connections>
+                <outlet property="EditTextField" destination="elP-Bd-Szu" id="8Nk-zl-yum"/>
+                <outlet property="ReverseStringLabel" destination="jWQ-du-kqA" id="Y8q-eq-CDC"/>
+                <outlet property="TheLengthLabel" destination="wyy-pY-tZn" id="FIu-fG-J7a"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit this:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc5-Ky-cWE">
+                    <rect key="frame" x="20" y="93" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elP-Bd-Szu">
+                    <rect key="frame" x="20" y="122" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Length:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dL5-gV-9q4">
+                    <rect key="frame" x="20" y="186" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In Reverse:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhw-1l-07g">
+                    <rect key="frame" x="20" y="274" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit this:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-du-kqA">
+                    <rect key="frame" x="20" y="303" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit this:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-pY-tZn">
+                    <rect key="frame" x="20" y="215" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dL5-gV-9q4" firstAttribute="trailing" secondItem="wyy-pY-tZn" secondAttribute="trailing" id="5vZ-up-snN"/>
+                <constraint firstItem="elP-Bd-Szu" firstAttribute="trailing" secondItem="dL5-gV-9q4" secondAttribute="trailing" id="Czu-2u-ahP"/>
+                <constraint firstItem="wyy-pY-tZn" firstAttribute="leading" secondItem="bhw-1l-07g" secondAttribute="leading" id="DoV-7B-7jT"/>
+                <constraint firstItem="elP-Bd-Szu" firstAttribute="top" secondItem="fc5-Ky-cWE" secondAttribute="bottom" constant="8" id="G9d-j7-ns4"/>
+                <constraint firstItem="fc5-Ky-cWE" firstAttribute="trailing" secondItem="elP-Bd-Szu" secondAttribute="trailing" id="KKT-aj-yom"/>
+                <constraint firstItem="bhw-1l-07g" firstAttribute="trailing" secondItem="jWQ-du-kqA" secondAttribute="trailing" id="LRZ-jZ-Bwv"/>
+                <constraint firstItem="fc5-Ky-cWE" firstAttribute="leading" secondItem="2" secondAttribute="leadingMargin" id="Xgi-RO-Val"/>
+                <constraint firstItem="fc5-Ky-cWE" firstAttribute="trailing" secondItem="2" secondAttribute="trailingMargin" id="Yr0-Mm-Tck"/>
+                <constraint firstItem="dL5-gV-9q4" firstAttribute="top" secondItem="elP-Bd-Szu" secondAttribute="bottom" constant="30" id="bEZ-P4-Qjx"/>
+                <constraint firstItem="wyy-pY-tZn" firstAttribute="top" secondItem="dL5-gV-9q4" secondAttribute="bottom" constant="8" id="bnX-NM-b3X"/>
+                <constraint firstItem="elP-Bd-Szu" firstAttribute="leading" secondItem="dL5-gV-9q4" secondAttribute="leading" id="c9q-ug-mOb"/>
+                <constraint firstItem="bhw-1l-07g" firstAttribute="top" secondItem="wyy-pY-tZn" secondAttribute="bottom" constant="38" id="eaJ-j5-r3d"/>
+                <constraint firstItem="wyy-pY-tZn" firstAttribute="trailing" secondItem="bhw-1l-07g" secondAttribute="trailing" id="mza-Oz-qMe"/>
+                <constraint firstItem="fc5-Ky-cWE" firstAttribute="top" secondItem="2" secondAttribute="top" constant="93" id="qMc-SK-Nwb"/>
+                <constraint firstItem="fc5-Ky-cWE" firstAttribute="leading" secondItem="elP-Bd-Szu" secondAttribute="leading" id="rxl-d8-VmB"/>
+                <constraint firstItem="jWQ-du-kqA" firstAttribute="top" secondItem="bhw-1l-07g" secondAttribute="bottom" constant="8" id="yUt-bX-Mg7"/>
+                <constraint firstItem="dL5-gV-9q4" firstAttribute="leading" secondItem="wyy-pY-tZn" secondAttribute="leading" id="yW7-8J-kCF"/>
+                <constraint firstItem="bhw-1l-07g" firstAttribute="leading" secondItem="jWQ-du-kqA" secondAttribute="leading" id="yy5-fA-MyZ"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+</document>

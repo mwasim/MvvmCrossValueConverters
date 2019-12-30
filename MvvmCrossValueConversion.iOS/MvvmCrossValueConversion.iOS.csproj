@@ -61,10 +61,31 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Views\HomeView.cs" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="Entitlements.plist" />
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Views\DatesView.xib" />
+    <Compile Include="Views\DatesView.cs" />
+    <Compile Include="Views\DatesView.designer.cs">
+      <DependentUpon>DatesView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\StringsView.xib" />
+    <Compile Include="Views\StringsView.cs" />
+    <Compile Include="Views\StringsView.designer.cs">
+      <DependentUpon>StringsView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\TwoWayView.xib" />
+    <Compile Include="Views\TwoWayView.cs" />
+    <Compile Include="Views\TwoWayView.designer.cs">
+      <DependentUpon>TwoWayView.cs</DependentUpon>
+    </Compile>
+    <InterfaceDefinition Include="Views\VisibilityView.xib" />
+    <Compile Include="Views\VisibilityView.cs" />
+    <Compile Include="Views\VisibilityView.designer.cs">
+      <DependentUpon>VisibilityView.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -129,7 +150,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Views\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MvvmCrossValueConversion.Core\MvvmCrossValueConversion.Core.csproj">

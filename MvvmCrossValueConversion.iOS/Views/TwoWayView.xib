@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoWayView">
+            <connections>
+                <outlet property="EditValueTextField" destination="sTH-kX-dTW" id="ErD-A4-pSo"/>
+                <outlet property="TheValueLabel" destination="EiR-Pb-vxV" id="X7k-BA-ZOs"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pi-ZD-lTq">
+                    <rect key="frame" x="20" y="81" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-Pb-vxV">
+                    <rect key="frame" x="20" y="110" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit value:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Led-wu-wpI">
+                    <rect key="frame" x="20" y="172" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTH-kX-dTW">
+                    <rect key="frame" x="20" y="201" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EiR-Pb-vxV" firstAttribute="top" secondItem="8Pi-ZD-lTq" secondAttribute="bottom" constant="8" id="72j-YU-0Dh"/>
+                <constraint firstItem="Led-wu-wpI" firstAttribute="trailing" secondItem="sTH-kX-dTW" secondAttribute="trailing" id="8IB-2b-j58"/>
+                <constraint firstItem="8Pi-ZD-lTq" firstAttribute="top" secondItem="2" secondAttribute="top" constant="81" id="8ZX-3o-lyr"/>
+                <constraint firstItem="8Pi-ZD-lTq" firstAttribute="trailing" secondItem="EiR-Pb-vxV" secondAttribute="trailing" id="CR5-kA-bbh"/>
+                <constraint firstItem="EiR-Pb-vxV" firstAttribute="trailing" secondItem="Led-wu-wpI" secondAttribute="trailing" id="DgH-ZB-ewJ"/>
+                <constraint firstItem="EiR-Pb-vxV" firstAttribute="leading" secondItem="Led-wu-wpI" secondAttribute="leading" id="Fgd-lh-2UO"/>
+                <constraint firstItem="8Pi-ZD-lTq" firstAttribute="leading" secondItem="2" secondAttribute="leadingMargin" id="GGG-UX-wPw"/>
+                <constraint firstItem="Led-wu-wpI" firstAttribute="leading" secondItem="sTH-kX-dTW" secondAttribute="leading" id="Kia-MC-fTR"/>
+                <constraint firstItem="8Pi-ZD-lTq" firstAttribute="trailing" secondItem="2" secondAttribute="trailingMargin" id="Qf4-EO-jzz"/>
+                <constraint firstItem="Led-wu-wpI" firstAttribute="top" secondItem="EiR-Pb-vxV" secondAttribute="bottom" constant="41" id="ee5-sN-17j"/>
+                <constraint firstItem="sTH-kX-dTW" firstAttribute="top" secondItem="Led-wu-wpI" secondAttribute="bottom" constant="8" id="lnH-36-7zg"/>
+                <constraint firstItem="8Pi-ZD-lTq" firstAttribute="leading" secondItem="EiR-Pb-vxV" secondAttribute="leading" id="pRz-zw-YxG"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatesView">
+            <connections>
+                <outlet property="OldDateLabel" destination="cPH-Ny-i5g" id="Ka8-Qq-TpH"/>
+                <outlet property="OldDateTimeAgoLabel" destination="JXY-0B-xzw" id="0JP-kt-Xq3"/>
+                <outlet property="TheDateLabel" destination="hp2-1t-FwF" id="GoE-Tl-gQD"/>
+                <outlet property="TheDateTimeAgoLabel" destination="hVD-OP-Wf2" id="4CL-kW-sCa"/>
+                <outlet property="VOldDateLabel" destination="RTg-J3-pN5" id="DuZ-7M-FjT"/>
+                <outlet property="VOldDateTimeAgoLabel" destination="6UV-hY-kTv" id="AGj-NW-gFl"/>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhS-QN-nAb">
+                    <rect key="frame" x="20" y="79" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TheDateTimeAgo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hVD-OP-Wf2">
+                    <rect key="frame" x="20" y="108" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Old date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXm-kr-Qnn">
+                    <rect key="frame" x="20" y="194" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OldDateTimeAgo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXY-0B-xzw">
+                    <rect key="frame" x="20" y="223" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Very old date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJ6-Aa-k1c">
+                    <rect key="frame" x="20" y="300" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOldDateTimeAgo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UV-hY-kTv">
+                    <rect key="frame" x="20" y="329" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TheDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hp2-1t-FwF">
+                    <rect key="frame" x="20" y="137" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOldDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTg-J3-pN5">
+                    <rect key="frame" x="20" y="358" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OldDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cPH-Ny-i5g">
+                    <rect key="frame" x="20" y="252" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jhS-QN-nAb" firstAttribute="top" secondItem="2" secondAttribute="top" constant="79" id="1Qx-gR-F5s"/>
+                <constraint firstItem="MJ6-Aa-k1c" firstAttribute="top" secondItem="cPH-Ny-i5g" secondAttribute="bottom" constant="27" id="1iR-uP-sty"/>
+                <constraint firstItem="jhS-QN-nAb" firstAttribute="trailing" secondItem="2" secondAttribute="trailingMargin" id="45g-NE-FKW"/>
+                <constraint firstItem="6UV-hY-kTv" firstAttribute="top" secondItem="MJ6-Aa-k1c" secondAttribute="bottom" constant="8" id="4wk-ZW-n3t"/>
+                <constraint firstItem="qXm-kr-Qnn" firstAttribute="leading" secondItem="JXY-0B-xzw" secondAttribute="leading" id="6ab-ZU-Pgm"/>
+                <constraint firstItem="hp2-1t-FwF" firstAttribute="top" secondItem="hVD-OP-Wf2" secondAttribute="bottom" constant="8" id="7Ql-PY-scF"/>
+                <constraint firstItem="JXY-0B-xzw" firstAttribute="trailing" secondItem="cPH-Ny-i5g" secondAttribute="trailing" id="9Iq-mY-sWA"/>
+                <constraint firstItem="qXm-kr-Qnn" firstAttribute="top" secondItem="hp2-1t-FwF" secondAttribute="bottom" constant="36" id="B2b-qp-ECD"/>
+                <constraint firstItem="jhS-QN-nAb" firstAttribute="trailing" secondItem="hVD-OP-Wf2" secondAttribute="trailing" id="EyU-kg-eCx"/>
+                <constraint firstItem="hp2-1t-FwF" firstAttribute="leading" secondItem="qXm-kr-Qnn" secondAttribute="leading" id="Jl6-9P-XBH"/>
+                <constraint firstItem="cPH-Ny-i5g" firstAttribute="top" secondItem="JXY-0B-xzw" secondAttribute="bottom" constant="8" id="Ljb-RQ-SyK"/>
+                <constraint firstItem="cPH-Ny-i5g" firstAttribute="leading" secondItem="MJ6-Aa-k1c" secondAttribute="leading" id="MbK-sx-g9r"/>
+                <constraint firstItem="jhS-QN-nAb" firstAttribute="leading" secondItem="2" secondAttribute="leadingMargin" id="P8u-yd-0eU"/>
+                <constraint firstItem="JXY-0B-xzw" firstAttribute="top" secondItem="qXm-kr-Qnn" secondAttribute="bottom" constant="8" id="SEf-Ri-eNi"/>
+                <constraint firstItem="RTg-J3-pN5" firstAttribute="top" secondItem="6UV-hY-kTv" secondAttribute="bottom" constant="8" id="YwV-O8-syx"/>
+                <constraint firstItem="hVD-OP-Wf2" firstAttribute="leading" secondItem="hp2-1t-FwF" secondAttribute="leading" id="aUI-gc-jLw"/>
+                <constraint firstItem="cPH-Ny-i5g" firstAttribute="trailing" secondItem="MJ6-Aa-k1c" secondAttribute="trailing" id="cPL-X7-YO9"/>
+                <constraint firstItem="qXm-kr-Qnn" firstAttribute="trailing" secondItem="JXY-0B-xzw" secondAttribute="trailing" id="dHK-h2-k2K"/>
+                <constraint firstItem="6UV-hY-kTv" firstAttribute="leading" secondItem="RTg-J3-pN5" secondAttribute="leading" id="hvr-m2-fGj"/>
+                <constraint firstItem="hVD-OP-Wf2" firstAttribute="top" secondItem="jhS-QN-nAb" secondAttribute="bottom" constant="8" id="qPy-3a-xdE"/>
+                <constraint firstItem="MJ6-Aa-k1c" firstAttribute="leading" secondItem="6UV-hY-kTv" secondAttribute="leading" id="rjj-jU-U9e"/>
+                <constraint firstItem="MJ6-Aa-k1c" firstAttribute="trailing" secondItem="6UV-hY-kTv" secondAttribute="trailing" id="u7j-1v-x8Z"/>
+                <constraint firstItem="hVD-OP-Wf2" firstAttribute="trailing" secondItem="hp2-1t-FwF" secondAttribute="trailing" id="uF3-cE-c4c"/>
+                <constraint firstItem="6UV-hY-kTv" firstAttribute="trailing" secondItem="RTg-J3-pN5" secondAttribute="trailing" id="uhc-QO-XDM"/>
+                <constraint firstItem="hp2-1t-FwF" firstAttribute="trailing" secondItem="qXm-kr-Qnn" secondAttribute="trailing" id="uz9-cK-C7n"/>
+                <constraint firstItem="JXY-0B-xzw" firstAttribute="leading" secondItem="cPH-Ny-i5g" secondAttribute="leading" id="y9N-mQ-Y8L"/>
+                <constraint firstItem="jhS-QN-nAb" firstAttribute="leading" secondItem="hVD-OP-Wf2" secondAttribute="leading" id="znK-jy-SGn"/>
+            </constraints>
+            <point key="canvasLocation" x="33.333333333333336" y="53.571428571428569"/>
+        </view>
+    </objects>
+</document>
